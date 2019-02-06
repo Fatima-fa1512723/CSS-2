@@ -1,0 +1,56 @@
+body{
+
+    margin-left: auto
+}
+
+P  {
+        color: black;
+}
+.container{
+    grid-template-rows: 1fr 2fr 3fr;
+   border: 5px black double;
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+}
+
+p.item1{
+    background-color: yellow;
+    grid-column: 2;  /*span 3*/
+    grid-row: 4;
+}
+p.item2{
+
+}
+p.item{
+    box-sizing: border-box;
+    border: 2px violet solid;
+    margin-left: 40px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+
+    padding: 40px 40px 10px 20px;
+    height: 200px;
+    width: 200px;
+    text-align: center;
+    text-decoration: underline;
+    text-transform: uppercase;
+    font-family: Arial;
+}
+
+h1, h2, h3 {
+    color:darkred;
+}
+nav ul{
+    /*with spaces you're targetting the child [ul*/
+
+}
+ul a {
+    text-decoration: none; /*get this of underline in a*/
+}
+
+@media screen and (max-width: 600px){
+    body{
+        background-color:lightblue;
+    }
+
+}

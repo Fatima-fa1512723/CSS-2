@@ -1,0 +1,74 @@
+.box{
+    background-color: lightblue;
+    margin: 20px;
+    width: 400px;
+}
+
+.grid-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item1{
+    display: flex;
+    flex: 1;
+    order:1;
+
+}
+div.item1 ul{
+
+}
+a:hover{
+    text-decoration: underline;
+    font-weight: bold;
+}
+a{
+    margin-left:10px;
+    margin-right: 10px;
+    align-self: end;
+}
+
+.item2{
+flex: 1;
+    order: 4;
+}
+
+.item3{
+flex: 1;
+    order: 3;
+}
+
+.item4{
+flex:1;
+    order: 2;
+}
+
+.item5{
+    flex: 1;
+    order: 5;
+}
+.box{
+    border: dodgerblue 5px solid;
+}
+
+.icon{
+    font-size: 6em;
+    color: plum;
+}
+
+img{
+    width: 20vh;
+    height: 20vh;
+
+}
+.image-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 600px) {
+    body{
+        background-color: yellow;
+    }
+
+}

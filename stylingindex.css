@@ -1,0 +1,81 @@
+.box{
+    background-color: dodgerblue;
+   /* height: 150px;
+    width: 150px;*/
+
+
+    /* Removed  and changed wid and height to min
+    margin: 10px;
+    */
+}
+
+/*
+.second-class{
+    padding: 10px;
+    font-size: 2em;
+}*/
+
+.grid-container{
+    border: black 5px solid;
+
+    display: grid;
+
+    grid-template-rows:auto auto;
+
+    grid-template-columns: repeat(3,1fr);
+    /*We want to fairly share the size of boxes whatever what the window size is
+    Using FRACTIONS So, with the above statement you've got 3 columns equally divided
+    grid-template-columns: auto 1fr;
+    */
+
+    grid-gap: 10px;
+    height: 500px;
+    /*Gap between item like margin there is
+    grid-column-gap same as the row except grid-gap combines both
+    also column-gap same as the row.
+    */
+
+    align-items: start;
+    justify-content: start;
+
+
+}
+
+.item1{
+/*
+font-size: xx-large;
+*/
+
+    grid-column-start: 1;
+    grid-column-end: 4;
+
+    /* equavlant to grid-column: 1/4 works with lines
+    grid-column: span 3; works with boxes
+
+    also
+    grid-column: 2/span2;
+
+    ONLY APPLIED ON CHILDREN.
+    */
+}
+
+
+.item2{
+    /*
+    font-size: x-large;
+    */
+    grid-column: 3;
+    grid-row: 3;
+
+    /* replace box 6 with 2*/
+}
+.item6{
+    grid-column: 1;
+    grid-row: 2;
+    grid-row: span 2;
+}
+
+.item3{
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
